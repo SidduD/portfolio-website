@@ -12,7 +12,7 @@ app.use(express.json());
 
 //CORS middleware config
 const corsOptions = {
-  origin: ["http://localhost:5173"], // Specify your allowed origins
+  origin: ["http://localhost:5173", "https://siddudhanasekar.vercel.app/"], // Specify your allowed origins
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
   allowedHeaders: ["Content-Type"] // Allowed headers
 };

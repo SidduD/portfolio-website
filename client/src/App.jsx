@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 
 function App({ toggleTheme }) {
   return (

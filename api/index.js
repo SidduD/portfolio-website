@@ -33,7 +33,7 @@ mongoose
     console.log(error);
   });
 
-app.get("/skills", async (req, res) => {
+app.get("/api/skills", async (req, res) => {
   try {
     const skills = await Skills.find({});
     res.status(200).json(skills);
@@ -42,7 +42,7 @@ app.get("/skills", async (req, res) => {
   }
 });
 
-app.get("/projects", async (req, res) => {
+app.get("/api/projects", async (req, res) => {
   try {
     const projects = await Projects.find({});
     res.status(200).json(projects);
